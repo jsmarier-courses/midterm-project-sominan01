@@ -5,3 +5,5 @@ Here are the files for the midterm project of courses JOU4100 Digital Journalism
 ## Modèle pour le Projet de mi-session : Analyse exploratoire de données (AED)
 
 Vous trouverez ici les fichiers pour le projet de mi-session des cours JOU4100 Digital Journalism II et JOU4500 Journalisme numérique II à l'Université d'Ottawa, et du cours MPAD2003 Introductory Data Storytelling offert à l'Université Carleton.
+
+TEST
