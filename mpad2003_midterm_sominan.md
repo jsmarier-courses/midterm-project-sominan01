@@ -30,6 +30,10 @@ I will analyze a City of Ottawa dataset about a summary of service requests rece
 
 ## 2. Getting Data
 
+Following the instruction above, I downloaded the CSV file and then file > import > insert > Import location: replace spreadsheet, separator type: coma, convert text to numbers, dates, and formulas > import data 
+
+Screenshot of Import Data:
+
 Use two hashtag symbols (`##`) to create a level 2 heading like this one.
 
 To include a screen capture, use the sample code below. Your images should be saved in the same folder as your `.md` file.
@@ -54,7 +58,28 @@ This also shows how to create an ordered list. Simply put `1.` before each item.
 
 Use three hashtag symbols (`###`) to create a level 3 heading like this one. Please follow this template when it comes to level 1 and level 2 headings. However, you can use level 3 headings as you see fit.
 
-Insert text here.
+Valid 
+There is no missing data. The values are within a valid range. 
+For Column F, there are 3,020 \N listed which match the numbers of active status of complaints. 
+
+Invalid (not sure) 
+Isn’t dispatch includes email, voice in, and counter (?), are they not considered as one dispatch category? 
+
+Missing values 
+There are no missing values. 
+
+\N is for private complaints. 
+
+Column H represents latitude and 24,148 are listed as \N. 
+Column I represents longitude and 24,149 are listed as \N like column H. 
+
+(used as an example) For instance, *Deeper observation..Correlation between latitude, longitude, and address 
+Most of latitude, longitude, and address are listed when dealing with roads and transportation. (and another factor) 
+Roads and transportation 4,214
+28539 - 4214 = 24325, (similar number as latitude and longitude blank space) 
+Others are social community service, recreation and culture, and more.
+There are all public domain complaints 
+
 
 Support your claims by citing relevant sources. Please follow [APA guidelines for in-text citations](https://apastyle.apa.org/style-grammar-guidelines/citations).
 
