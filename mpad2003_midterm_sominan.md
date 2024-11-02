@@ -24,7 +24,9 @@ And to create an unordered list, we simply put a star (`*`) before each item.
 
 ## 1. Introduction
 
-Insert text here.
+I will analyze a City of Ottawa dataset about a summary of service requests received through channels such as 311 Contact Centre, Client Service Centre, 311 Email, and Web-based Self-Service portal. It is open data to the public and the latest update was on October 3, 2024. The data includes date of service request, status, type, description, address, latitude, longitude, ward, and channel. 
+
+(need to two more parts here after asking the prof)
 
 ## 2. Getting Data
 
