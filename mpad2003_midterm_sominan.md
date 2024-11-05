@@ -45,7 +45,8 @@ General Obeservation:
 This data has 28539 rows and 11 columns before cleaning up the data. 
 The data has some clutters, but it is cleaner than I expected.
 The service request ID and opened date are in order.  
-There are \N in description, closed date, address, latitude, longitude, and ward columns. There are also two blank rows in 28538 and 28539 without any information. 
+There are \N in description, closed date, address, latitude, longitude, and ward columns. For water and environment, many descriptions are written as /N. 
+There are also two blank rows in 28538 and 28539 without any information. 
 
 Specific Observations: 
 Column C and D are nominal variables under categorical variables. 
@@ -79,28 +80,6 @@ This also shows how to create an ordered list. Simply put `1.` before each item.
 
 Use three hashtag symbols (`###`) to create a level 3 heading like this one. Please follow this template when it comes to level 1 and level 2 headings. However, you can use level 3 headings as you see fit.
 
-Valid 
-There is no missing data. The values are within a valid range. 
-For Column F, there are 3,020 \N listed which match the numbers of active status of complaints. 
-
-Invalid (not sure) 
-Isn’t dispatch includes email, voice in, and counter (?), are they not considered as one dispatch category? 
-
-Missing values 
-There are no missing values. 
-
-\N is for private complaints. 
-
-Column H represents latitude and 24,148 are listed as \N. 
-Column I represents longitude and 24,149 are listed as \N like column H. 
-
-(used as an example) For instance, *Deeper observation..Correlation between latitude, longitude, and address 
-Most of latitude, longitude, and address are listed when dealing with roads and transportation. (and another factor) 
-Roads and transportation 4,214
-28539 - 4214 = 24325, (similar number as latitude and longitude blank space) 
-Others are social community service, recreation and culture, and more.
-There are all public domain complaints 
-
 
 Support your claims by citing relevant sources. Please follow [APA guidelines for in-text citations](https://apastyle.apa.org/style-grammar-guidelines/citations).
 
@@ -110,7 +89,16 @@ As Cairo (2016) argues, a data visualization should be truthful...
 
 ### 3.2. Cleaning Data
 
-Insert text here.
+I used three different methods to clean the data. 
+First, I used SPLIT and CONCATENATE functions. 
+I used SPLIT function to divide the English and French descriptions. 
+After, I copied and pasted the value only and deleted the original description with English and French, and French description which only leaves to English description. 
+Moreover, the bound of service requests are Ottawa, Ontario, I decided to add the specific address using CONCATENATE function. 
+Second, I froze the first row and column to see the category everytime I scrolled down the data. Then, I added the filter to entire column. 
+Finally, I used OpenRefine to clean up the clusters. 
+There are small changes to make through OpenRefine. 
+For the channel column, there are two voice in and merged the voice in section concluding 828 rows. 
+I also narrowed down the category by merging zones to zoning, walk-in to walk in, and signal flasher to signal flash. 
 
 ### 3.3. Exploratory Data Analysis (EDA)
 
@@ -132,7 +120,7 @@ Insert text here.
 
 ## 5. Conclusion
 
-Insert text here.
+I was not sure the difference between 
 
 ## 6. References
 
