@@ -99,6 +99,8 @@ Finally, I used OpenRefine to clean up the clusters.
 There are small changes to make through OpenRefine. 
 For the channel column, there are two voice in and merged the voice in section concluding 828 rows. 
 I also narrowed down the category by merging zones to zoning, walk-in to walk in, and signal flasher to signal flash. 
+Through google sheets filter, I found some blank and /N in few sections. 
+I added /N in service request id 202457133382 address section because it was blank. I also added Bylaw Services in property standards - grass long/weeds based on original document provided by City of Ottawa.  
 
 A screen capture of my dataset:
 <img src="import-screen-capture2.png"/>
@@ -125,9 +127,13 @@ Insert text here.
 
 ## 5. Conclusion
 
-First, I would like to apologize for being late. Time management is crucial in the workplace and university, and I have not been doing good with submitting the assignment on time this semester. I will try my best to improve on time management to submit the assignment on time with a good quality. 
+First, I would like to apologize for being late. Time management is crucial in the workplace and university, and I have not been doing good with submitting the assignment on time this semester. I could have started earlier to avoid late submission. 
 
-Second, it was difficult to see the 
+Second, it was difficult to see the differences between detailed descriptions. For example, new pool no fence and pool fence inquiry look the same but I was unsure to merge them as the same category. I wanted to make description category shorter but there are many detailed descriptions that sounded the same, but are different. It was difficult to identify the differences. 
+
+Third, most challenging process was my macbook air crashing and slowing down eveytime I made changes in Google Sheets. I had to redo the whole process by using Window computer on campus. 
+
+Finally, most rewarding part was finding the small clusters by using Open Refine and Google Sheets filter. It was sastifying to find small clusters and fill out the right informations based on the original data by City of Ottawa. 
 
 ## 6. References
 
