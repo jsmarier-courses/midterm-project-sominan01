@@ -26,17 +26,22 @@ And to create an unordered list, we simply put a star (`*`) before each item.
 
 I will analyze a City of Ottawa dataset about a summary of service requests received through channels such as 311 Contact Centre, Client Service Centre, 311 Email, and Web-based Self-Service portal. It is open data to the public and the latest update was on October 3, 2024. The data includes date of service request, status, type, description, address, latitude, longitude, ward, and channel. 
 
-(need to two more parts here after asking the prof)
+Link to the original dataset on Open Ottawa:
+https://311opendatastorage.blob.core.windows.net/311data/311opendata_currentyear.csv
+
+The main goals for this assignment are cleaning the data using different methods, building pivot table and chart, and creating a story. 
 
 ## 2. Getting Data
 
 Following the instruction above, I downloaded the CSV file and then file > import > insert > Import location: replace spreadsheet, separator type: coma, convert text to numbers, dates, and formulas > import data 
 
 Screenshot of Import Data:
+<img src="import-screen-capture1.png"/>
+
+Public link to Google Sheets spreadsheet: 
+https://docs.google.com/spreadsheets/d/1Yma-y9bHKEZ5epXcet01zzsU41Ia8wDiBIO_9p_B14E/edit?usp=sharing 
 
 Use two hashtag symbols (`##`) to create a level 2 heading like this one.
-
-To include a screen capture, use the sample code below. Your images should be saved in the same folder as your `.md` file.
 
 ![](import-screen-capture.png)<br>
 *Figure 1: The "Import file" prompt on Google Sheets.*
