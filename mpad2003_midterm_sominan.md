@@ -41,6 +41,22 @@ Screenshot of Import Data:
 Public link to Google Sheets spreadsheet: 
 https://docs.google.com/spreadsheets/d/1Yma-y9bHKEZ5epXcet01zzsU41Ia8wDiBIO_9p_B14E/edit?usp=sharing 
 
+General Obeservation: 
+This data has 28539 rows and 11 columns before cleaning up the data. 
+The data has some clutters, but it is cleaner than I expected.
+The service request ID and opened date are in order.  
+There are \N in description, closed date, address, latitude, longitude, and ward columns. There are also two blank rows in 28538 and 28539 without any information. 
+
+Specific Observations: 
+Column C and D are nominal variables under categorical variables. 
+Column E and F are discrete variables under numeric variables. Here, dates can only be whole number and cannot be in decimal. 
+Column B and K are nominal variables under categorical variables. 
+Column H and I are continuous variables under numeric variables. 
+
+Formulate one hypothesis: 
+Active complaints are usually roads and transportation, water and the environment, bylaw services that might be difficult to resolve faster than complaints such as garbage and recycling and parking control. 
+
+
 Use two hashtag symbols (`##`) to create a level 2 heading like this one.
 
 ![](import-screen-capture.png)<br>
