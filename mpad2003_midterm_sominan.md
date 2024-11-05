@@ -26,7 +26,7 @@ And to create an unordered list, we simply put a star (`*`) before each item.
 
 I will analyze a City of Ottawa dataset about a summary of service requests received through channels such as 311 Contact Centre, Client Service Centre, 311 Email, and Web-based Self-Service portal. It is open data to the public and the latest update was on October 3, 2024. The data includes date of service request, status, type, description, address, latitude, longitude, ward, and channel. 
 
-Link to the original dataset on Open Ottawa:
+# Link to the original dataset on Open Ottawa:
 https://311opendatastorage.blob.core.windows.net/311data/311opendata_currentyear.csv
 
 The main goals for this assignment are cleaning the data using different methods, building pivot table and chart, and creating a story. 
@@ -41,20 +41,20 @@ Screenshot of Import Data:
 Public link to Google Sheets spreadsheet: 
 https://docs.google.com/spreadsheets/d/1Yma-y9bHKEZ5epXcet01zzsU41Ia8wDiBIO_9p_B14E/edit?usp=sharing 
 
-General Obeservation: 
+## General Obeservation: 
 This data has 28539 rows and 11 columns before cleaning up the data. 
 The data has some clutters, but it is cleaner than I expected.
 The service request ID and opened date are in order.  
 There are \N in description, closed date, address, latitude, longitude, and ward columns. For water and environment, many descriptions are written as /N. 
 There are also two blank rows in 28538 and 28539 without any information. 
 
-Specific Observations: 
+## Specific Observations: 
 Column C and D are nominal variables under categorical variables. 
 Column E and F are discrete variables under numeric variables. Here, dates can only be whole number and cannot be in decimal. 
 Column B and K are nominal variables under categorical variables. 
 Column H and I are continuous variables under numeric variables. 
 
-Formulate one hypothesis: 
+## Formulate one hypothesis: 
 Active complaints are usually roads and transportation, water and the environment, bylaw services that might be difficult to resolve faster than complaints such as garbage and recycling and parking control. 
 
 
@@ -100,19 +100,24 @@ There are small changes to make through OpenRefine.
 For the channel column, there are two voice in and merged the voice in section concluding 828 rows. 
 I also narrowed down the category by merging zones to zoning, walk-in to walk in, and signal flasher to signal flash. 
 
+A screen capture of my dataset:
+<img src="import-screen-capture2.png"/>
+
 ### 3.3. Exploratory Data Analysis (EDA)
 
-Insert text here.
+Using the data, I created pivot table and chart. 
+I chose to two variables which are types of service requests and ward numbers. 
+These two variables can illustrate wards that have the highest amounts of requests and top service requests in Ottawa. I chose these two variables to show the correlation between the city receiving the highest requests.  
+Garage and Recycling, Bylaw Services, and Roads and Transportations are the top three requests made in Ottawa. 
+Ward 12 (Rideau-Vanier Ward), Ward 14 (Somerset), and Ward 15 (Kitchissippi) received the highest amounts of service requests. 
 
 **This section should include a screen capture of your pivot table, like so:**
-
-![](pivot-table-screen-capture.png)<br>
-*Figure 2: This pivot table shows...*
+<img src="screen-capture3.png"/>
+This pivot table shows the each and total numbers of requests based on wards. 
 
 **This section should also include a screen capture of your exploratory chart, like so:**
-
-![](chart-screen-capture.png)<br>
-*Figure 3: This exploratory chart shows...*
+<img src="screen-capture4.png"/>
+This exploratory chart shows types of service requests by ward numbers with visual elements compared to the pivot table. I used line chart above othet types of chart because a line chart compares visually of relation or variation between two vairables effectively. Line chart I created can show trends and relationships between data and compare trends in different groups. 
 
 ## 4. Potential Story
 
@@ -120,7 +125,9 @@ Insert text here.
 
 ## 5. Conclusion
 
-I was not sure the difference between 
+First, I would like to apologize for being late. Time management is crucial in the workplace and university, and I have not been doing good with submitting the assignment on time this semester. I will try my best to improve on time management to submit the assignment on time with a good quality. 
+
+Second, it was difficult to see the 
 
 ## 6. References
 
