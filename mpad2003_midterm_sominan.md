@@ -77,7 +77,7 @@ This also shows how to create an ordered list. Simply put `1.` before each item.
 ## 3. Understanding Data
 
 ### 3.1. VIMO Analysis
-reference vimo video (1-2 sentences)
+
 To check data accuracy and validation, I used VIMO analysis. 
 VIMO stands for Valid, Invalid, Missing, and Outliers. 
 Valid, Invalid, and Missing components focus on missing data and valid range. 
@@ -133,11 +133,12 @@ This exploratory chart shows types of service requests by ward numbers with visu
 
 ## 4. Potential Story
 
-Insert text here.
+Ward 12, 14, and Ward 15 are all downtown where many people live, work, and visit. This might be the reason why these wards have the highest service requests.
+Moreover, city's highest service requests are garbage and recycling, bylaw services, and roads and transportations. These requests are part of dailty acitivity that people usually do compared to licenses and permits and recreation and culture. Health and safety are relatable but people would contact other departments rather than City of Ottawa affiliated call centre for help or request service. 
 
 ## 5. Conclusion
 
-First, I would like to apologize for being late. Time management is crucial in the workplace and university, and I have not been doing good with submitting the assignment on time this semester. I could have started earlier to avoid late submission. 
+First, I would like to apologize for being late. Time management is crucial in the workplace and university, and I have not been doing well with submitting the assignment on time. I could have started earlier to avoid late submission. 
 
 Second, it was difficult to see the differences between detailed descriptions. For example, new pool no fence and pool fence inquiry look the same but I was unsure to merge them as the same category. I wanted to make description category shorter but there are many detailed descriptions that sounded the same, but are different. It was difficult to identify the differences. 
 
