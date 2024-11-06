@@ -5,8 +5,6 @@
 
 # Midterm Project: Exploratory Data Analysis (EDA)
 
-Use one hashtag symbol (`#`) to create a level 1 heading like this one.
-
 ## Foreword
 
 For this assignment, you must extract data from a dataset provided by the instructor. You must then clean and analyze the data, create exploratory charts/visualizations, and find a potential story idea. Your assignment must clearly detail your process. You are expected to write about 1500-2000 words, and to include several screen captures showing the different steps you went through. Your assignment must be written with the Markdown format and submitted on GitHub Classroom.
@@ -133,8 +131,14 @@ This exploratory chart shows types of service requests by ward numbers with visu
 
 ## 4. Potential Story
 
-Ward 12, 14, and Ward 15 are all downtown where many people live, work, and visit. This might be the reason why these wards have the highest service requests.
+Ward 12, 14, and Ward 15 are all downtown where many people live, work, and visit. This might be the reason why these wards have the highest service requests. For instance, noise requests occur more in downtown where there are more people than towns outside of downtown. 
 Moreover, city's highest service requests are garbage and recycling, bylaw services, and roads and transportations. These requests are part of dailty acitivity that people usually do compared to licenses and permits and recreation and culture. Health and safety are relatable but people would contact other departments rather than City of Ottawa affiliated call centre for help or request service. 
+
+For this potential story, I can interview people living in ward 12 about the top three service requests. Then, I will interview people living in ward 5 as a comparison. Ward 5 has the lowest service requests in the data. 
+
+For the relevant data, I would search for demographics in each ward.
+This is a link to current population and house hold estimates by ward:
+https://ottawa.ca/en/living-ottawa/statistics-and-demographics/current-population-and-household-estimates
 
 ## 5. Conclusion
 
