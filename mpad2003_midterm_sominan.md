@@ -77,9 +77,19 @@ This also shows how to create an ordered list. Simply put `1.` before each item.
 ## 3. Understanding Data
 
 ### 3.1. VIMO Analysis
+reference vimo video (1-2 sentences)
+To check data accuracy and validation, I used VIMO analysis. 
+VIMO stands for Valid, Invalid, Missing, and Outliers. 
+Valid, Invalid, and Missing components focus on missing data and valid range. 
+In this data, there are missing data. 
+Through google sheets filter, I found some blank and /N in few sections. 
+I added /N in service request id 202457133382 address section because it was blank. I also added Bylaw Services in property standards - grass long/weeds based on original document provided by City of Ottawa.  
+Other than blank spaces, I double checked to see any errors between latitude, longtitude, and address. If the adress column is \N, latitude and longitude need to be also \N. 
+Latitude and longitude are in the valid range. 
 
-Use three hashtag symbols (`###`) to create a level 3 heading like this one. Please follow this template when it comes to level 1 and level 2 headings. However, you can use level 3 headings as you see fit.
-
+### outliers
+The values are extremely small or large relative to expectations. 
+For instance, in my chart, Garbae and Recycling and License and Permits are outliers because Garbage and Recycling is the largest value and License and Permits is the smallest value. However, the data is not invalid just because the numbers are higher or smaller than norm. 
 
 Support your claims by citing relevant sources. Please follow [APA guidelines for in-text citations](https://apastyle.apa.org/style-grammar-guidelines/citations).
 
@@ -99,8 +109,8 @@ Finally, I used OpenRefine to clean up the clusters.
 There are small changes to make through OpenRefine. 
 For the channel column, there are two voice in and merged the voice in section concluding 828 rows. 
 I also narrowed down the category by merging zones to zoning, walk-in to walk in, and signal flasher to signal flash. 
-Through google sheets filter, I found some blank and /N in few sections. 
-I added /N in service request id 202457133382 address section because it was blank. I also added Bylaw Services in property standards - grass long/weeds based on original document provided by City of Ottawa.  
+
+? Should i get rid of latitude and longtitude 
 
 A screen capture of my dataset:
 <img src="import-screen-capture2.png"/>
