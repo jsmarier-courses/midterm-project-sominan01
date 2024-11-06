@@ -75,6 +75,139 @@ This also shows how to create an ordered list. Simply put `1.` before each item.
 ## 3. Understanding Data
 
 ### 3.1. VIMO Analysis
+Cairo mentioned (2016) data visualization is to inform people. 
+One quality of a good visualization is truthful using reliable information. 
+VIMO analysis is a tool to use to check data accuracy and validation.
+VIMO stands for Valid, Invalid, Missing, and Outliers. 
+Valid, Invalid, and Missing components focus on missing data and valid range. 
+In this data, there are missing data. 
+Through google sheets filter, I found some blank and /N in few sections. 
+I added /N in service request id 202457133382 address section because it was blank. I also added Bylaw Services in property standards - grass long/weeds based on original document provided by City of Ottawa.  
+Other than blank spaces, I double checked to see any errors between latitude, longtitude, and address. If the adress column is \N, latitude and longitude need to be also \N. 
+Latitude and longitude are in the valid range. 
+
+### outliers
+The values are extremely small or large relative to expectations. 
+For instance, in my chart, Garbae and Recycling and License and Permits are outliers because Garbage and Recycling is the largest value and License and Permits is the smallest value. However, the data is not invalid just because the numbers are higher or smaller than norm. 
+
+Support your claims by citing relevant sources. Please follow [APA guidelines for in-text citations](https://apastyle.apa.org/style-grammar-guidelines/citations).
+
+### 3.2. Cleaning Data
+
+I used three different methods to clean the data. 
+First, I used SPLIT and CONCATENATE functions. 
+I used SPLIT function to divide the English and French descriptions. 
+After, I copied and pasted the value only and deleted the original description with English and French, and French description which only leaves to English description. 
+Moreover, the bound of service requests are Ottawa, Ontario, I decided to add the specific address using CONCATENATE function. 
+Second, I froze the first row and column to see the category everytime I scrolled down the data. Then, I added the filter to entire column. 
+Finally, I used OpenRefine to clean up the clusters. 
+There are small changes to make through OpenRefine. 
+For the channel column, there are two voice in and merged the voice in section concluding 828 rows. 
+I also narrowed down the category by merging zones to zoning, walk-in to walk in, and signal flasher to signal flash. 
+I deleted the latitude and longitude columns because they were irrelevant to my data and the address column can represent them. 
+
+A screen capture of my dataset:
+<img src="import-screen-capture2.png"/>
+
+### 3.3. Exploratory Data Analysis (EDA)
+
+Using the data, I created pivot table and chart. 
+I chose to two variables which are types of service requests and ward numbers. 
+These two variables can illustrate wards that have the highest amounts of requests and top service requests in Ottawa. I chose these two variables to show the correlation between the city receiving the highest requests.  
+Garage and Recycling, Bylaw Services, and Roads and Transportations are the top three requests made in Ottawa. 
+Ward 12 (Rideau-Vanier Ward), Ward 14 (Somerset), and Ward 15 (Kitchissippi) received the highest amounts of service requests. 
+
+**This section should include a screen capture of your pivot table, like so:**
+<img src="screen-capture3.png"/>
+This pivot table shows the each and total numbers of requests based on wards. 
+
+**This section should also include a screen capture of your exploratory chart, like so:**
+<img src="screen-capture4.png"/>
+This exploratory chart shows types of service requests by ward numbers with visual elements compared to the pivot table. I used line chart above othet types of chart because a line chart compares visually of relation or variation between two vairables effectively. Line chart I created can show trends and relationships between data and compare trends in different groups. 
+
+## 4. Potential Story
+
+Ward 12, 14, and Ward 15 are all downtown where many people live, work, and visit. This might be the reason why these wards have the highest service requests. For instance, noise requests occur more in downtown where there are more people than towns outside of downtown. 
+Moreover, city's highest service requests are garbage and recycling, bylaw services, and roads and transportations. These requests are part of dailty acitivity that people usually do compared to licenses and permits and recreation and culture. Health and safety are relatable but people would contact other departments rather than City of Ottawa affiliated call centre for help or request service. 
+
+For this potential story, I can interview people living in ward 12 about the top three service requests. Then, I will interview people living in ward 5 as a comparison. Ward 5 has the lowest service requests in the data. 
+
+For the relevant data, I would search for demographics in each ward.
+This is a link to current population and house hold estimates by ward:
+https://ottawa.ca/en/living-ottawa/statistics-and-demographics/current-population-and-household-estimates
+
+## 5. Conclusion
+
+First, I would like to apologize for being late. Time management is crucial in the workplace and university, and I have not been doing well with submitting the assignment on time. I could have started earlier to avoid late submission. 
+
+Second, it was difficult to see the differences between detailed descriptions. For example, new pool no fence and pool fence inquiry look the same but I was unsure to merge them as the same category. I wanted to make description category shorter but there are many detailed descriptions that sounded the same, but are different. It was difficult to identify the differences. 
+
+Third, most challenging process was my macbook air crashing and slowing down eveytime I made changes in Google Sheets. I had to redo the whole process by using Window computer on campus. 
+
+Finally, most rewarding part was finding the small clusters by using Open Refine and Google Sheets filter. It was sastifying to find small clusters and fill out the right informations based on the original data by City of Ottawa. 
+
+## 6. References
+
+Include a list of your references here. Please follow [APA guidelines for references](https://apastyle.apa.org/style-grammar-guidelines/references). Hanging paragraphs aren't required though.
+
+**Here's an example:**
+
+
+## 1. Introduction
+
+I will analyze a City of Ottawa dataset about a summary of service requests received through channels such as 311 Contact Centre, Client Service Centre, 311 Email, and Web-based Self-Service portal. It is open data to the public and the latest update was on October 3, 2024. The data includes date of service request, status, type, description, address, latitude, longitude, ward, and channel. 
+
+# Link to the original dataset on Open Ottawa:
+https://311opendatastorage.blob.core.windows.net/311data/311opendata_currentyear.csv
+
+The main goals for this assignment are cleaning the data using different methods, building pivot table and chart, and creating a story. 
+
+## 2. Getting Data
+
+Following the instruction above, I downloaded the CSV file and then file > import > insert > Import location: replace spreadsheet, separator type: coma, convert text to numbers, dates, and formulas > import data 
+
+Screenshot of Import Data:
+<img src="import-screen-capture1.png"/>
+
+Public link to Google Sheets spreadsheet: 
+https://docs.google.com/spreadsheets/d/1Yma-y9bHKEZ5epXcet01zzsU41Ia8wDiBIO_9p_B14E/edit?usp=sharing 
+
+## General Obeservation: 
+This data has 28539 rows and 11 columns before cleaning up the data. 
+The data has some clutters, but it is cleaner than I expected.
+The service request ID and opened date are in order.  
+There are \N in description, closed date, address, latitude, longitude, and ward columns. For water and environment, many descriptions are written as /N. 
+There are also two blank rows in 28538 and 28539 without any information. 
+
+## Specific Observations: 
+Column C and D are nominal variables under categorical variables. 
+Column E and F are discrete variables under numeric variables. Here, dates can only be whole number and cannot be in decimal. 
+Column B and K are nominal variables under categorical variables. 
+Column H and I are continuous variables under numeric variables. 
+
+## Formulate one hypothesis: 
+Active complaints are usually roads and transportation, water and the environment, bylaw services that might be difficult to resolve faster than complaints such as garbage and recycling and parking control. 
+
+
+Use two hashtag symbols (`##`) to create a level 2 heading like this one.
+
+![](import-screen-capture.png)<br>
+*Figure 1: The "Import file" prompt on Google Sheets.*
+
+**Here are examples of functions and lines of code put in grey boxes:**
+
+1. If you name a function, put it between "angled" quotation marks like this: `IMPORTHTML`.
+1. If you want to include the entire line of code, do the same thing, albeit with your entire code: `=IMPORTHTML("https://en.wikipedia.org/wiki/China"; "table", 5)`.
+1. Alternatively, you can put your code in an independent box using the template below:
+
+``` r
+=IMPORTHTML("https://en.wikipedia.org/wiki/China"; "table", 5)
+```
+This also shows how to create an ordered list. Simply put `1.` before each item.
+
+## 3. Understanding Data
+
+### 3.1. VIMO Analysis
 
 To check data accuracy and validation, I used VIMO analysis. 
 VIMO stands for Valid, Invalid, Missing, and Outliers. 
@@ -152,8 +285,9 @@ Finally, most rewarding part was finding the small clusters by using Open Refine
 
 ## 6. References
 
-Include a list of your references here. Please follow [APA guidelines for references](https://apastyle.apa.org/style-grammar-guidelines/references). Hanging paragraphs aren't required though.
+Data Accuracy and Validation: Methods to ensure the quality of data. (2020b, September 23). Www.statcan.gc.ca. https://www.statcan.gc.ca/en/wtc/data-literacy/catalogue/892000062020008
 
-**Here's an example:**
+Government of Canada, S. C. (2021, September 2). 5.5 Line chart. Www150.Statcan.gc.ca. https://www150.statcan.gc.ca/n1/edu/power-pouvoir/ch9/line-lineaire/5214824-eng.htm
 
-Bounegru, L., & Gray, J. (Eds.). (2021). *The Data Journalism Handbook 2: Towards A Critical Data Practice*. Amsterdam University Press. [https://ocul-crl.primo.exlibrisgroup.com/permalink/01OCUL_CRL/hgdufh/alma991022890087305153](https://ocul-crl.primo.exlibrisgroup.com/permalink/01OCUL_CRL/hgdufh/alma991022890087305153)
+The Truthful Art: Data, Charts, and Maps for Communication. (2016). New Riders.
+
